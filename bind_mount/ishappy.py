@@ -12,7 +12,6 @@ def isHappy(n):
 if __name__ == "__main__":
     sample0_output = isHappy(19)
     sample1_output = isHappy(2)
-    # 반드시 아래 경로로 저장해야 컨테이너와 호스트가 공유됨
     with open("/app/bind_mount/output.txt", "w") as f:
         f.write(f"19: {sample0_output}\n")
         f.write(f"2: {sample1_output}\n")
